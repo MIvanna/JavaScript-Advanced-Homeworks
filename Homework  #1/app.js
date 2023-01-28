@@ -15,8 +15,8 @@ function getSwapiPeople() {
         method: "GET",
 
         success: function (response) {
-            console.log(response)
             console.log("Results of SWAPI people:");
+            console.log(response)
             printResults(response.results)
         },
 
@@ -50,8 +50,8 @@ function getSwapiPlanets() {
         method: "GET",
 
         success: function (response) {
-            console.log(response);
             console.log("Results of SWAPI planets:");
+            console.log(response);
             printPlanets(response.results)
         },
         error: function (error) {
